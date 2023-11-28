@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header id="menu" style="padding-left: 5%; padding-right: 5%">
+  <a href="#category1">circularity</a>
+  <a href="#category2">disassembly</a>
+  <a href="#category3">decentralization</a>
+  <a href="#category4">community</a>
+</header>
+<body>
+  <section>
+    <h1 id="head">LIVING LIGHt</h1> 
+    <img src="imgs/screenicon.png">
+  </section>
+  <section>
+    <div>
+        <h2 id="title">new lives for old screens</h2>
+    </div>
+    <div> 
+        <p>The Living Light project aims to repurpose aging LCD monitors into video playing lamps.
+           Join this community-led, open-source initiative to transform forgotten 
+           electronics into standout pieces of homeware. Here, you have the offer 
+           to both benefit from and contribute to a project attempting to rally 
+           hobbyists by illuminating spaces with a surreal touch while emptying 
+           grandmothers’ basements everywhere.</p> 
+    </div>
+    <img src="imgs/arrows.png">
+  </section>
+
+  <section id="category1">
+    <div>
+        <h2 id="title">materials for circularity</h2>
+    </div>
+    <div> 
+        <p>Due to the blazing pace at which technology standards change, computer 
+          accessories such as monitors fall out of fashion before they fall out of function.
+          The Living Light project puts forth the use of biological or technical nutrients 
+          for every  non recycled part, strongly encouraging the use of polylactic acid (PLA), 
+          as mentioned in its design guidelines, 
+          for the printed parts and materials such as wood or natural fabrics for the covers.
+          A growing community of contributors is actively expanding the repertoire of models 
+          and pieces so your Living Light project can adapt to any part you may have laying around.
+          </p> 
+    </div>
+    <img src="imgs/assembly.png">
+  </section>
+
+  <section id="category2">
+    <div>
+        <h2 id="title">design for disassembly</h2>
+    </div>
+    <div> 
+        <p>Models offered under the Living Light project make a promise regarding design for disassembly. 
+          Ease and access to repair are key tenets for a project focused on extending the lives of
+          forgotten consumer products. </p> 
+    </div>
+    <img src="imgs/graph.png">
+  </section>
+
+  <section id="category3">
+    <div>
+        <h2 id="title">decentralized manufacturing</h2>
+    </div>
+    <div> 
+        <p>
+        Projects such as Living Light aim to be a decentralized, community effort enabled by open access to 
+      design files and technologies such as 3D printing. A recycling effort of the sort sacrifices scalability
+    for ultimate flexibility.</p> 
+    </div>
+    <img src="imgs/icons.png">
+  </section>
+
+  <section id="category4">
+    <div>
+        <h2 id="title">join/contribute</h2>
+    </div>
+    <div> 
+        <p>Join the Living Light project by building your first model, or contribute 
+          to an open-source design project by submitting your own.
+        </p> 
+        <a href="https://drive.google.com/drive/folders/1eXIGl-0XI3C6WvvE-d_ElT-u-6xerCc_?usp=sharing>models">models</a>
+        <a href="#category4">guidelines</a>
+    </div>
+  </section>
+
+  <a id="back-to-top">back to top</div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var backToTopButton = document.getElementById('back-to-top');
+
+      window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+
+      backToTopButton.addEventListener('click', function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    });
+  </script>
+
+</body>
+</html>

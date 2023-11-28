@@ -1,0 +1,113 @@
+@font-face {
+  font-family: gblur;
+  src: url(fonts/GaussianBlur.ttf);
+}
+
+@font-face {
+  font-family: blur;
+  src: url(fonts/GaussianBlur.ttf);
+}
+
+@font-face {
+  font-family: unineue;
+  src: url(fonts/UniNeue-Trial-Regular.ttf);
+}
+
+@font-face {
+  font-family: uniheavy;
+  src: url(fonts/UniNeue-Trial-Heavy.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(imgs/background.png);
+  }
+
+  p{ 
+    font-family: unineue;
+    color:#fff;
+    font-size: 1.8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    line-height: 3rem;
+    position: static;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  a{
+    font-family: gblur;
+    font-size: 2rem;
+    color: #fff;
+    filter: blur(2px);
+    text-decoration: none;
+    margin: 0 15px;
+  }
+
+  a:hover{
+    transition: color 500ms ease-in-out;
+    color: rgb(255, 0, 106);
+  }
+
+  img {
+    filter: blur(12px);
+    object-fit:fill;
+    scale: 1;
+    transition: scale 500ms ease-in-out;
+  }
+
+  img:hover{
+    transition: scale 500ms ease-in-out;
+    scale: 1.05;
+  }
+  
+  section {
+    padding-bottom: 2%;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #menu {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #title{
+    margin-top: 2rem;
+    font-family: gblur;
+    font-size: 2rem;
+    color: #fff;
+    filter: blur(2px);
+    text-decoration: none;
+    position:static;
+    margin: 0;
+    font-family: gblur;
+  }
+  
+  #back-to-top {
+    position: fixed;
+    align-items: center;
+    bottom: 20px;
+    right: 5%;
+    background-color: rgb(0, 0, 0, 0);
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #head{
+    font-family: gblur;
+    font-size: 12rem;
+    color: #fff;
+    filter: blur(8px);
+  }
